@@ -230,3 +230,132 @@ flex-direction:column;
 }
 
 }
+/* Hero Animation */
+
+.hero-content{
+
+    animation:fadeUp 1s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+#typing{
+
+    color:#38bdf8;
+
+}
+
+.scroll-indicator{
+
+    position:absolute;
+
+    bottom:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:#94a3b8;
+
+    animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translate(-50%,0);
+
+    }
+
+    50%{
+
+        transform:translate(-50%,10px);
+
+    }
+
+}
+
+/* Glowing background */
+
+.background::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#2563eb33;
+
+    border-radius:50%;
+
+    top:-150px;
+    left:-150px;
+
+    filter:blur(120px);
+
+    animation:float1 10s infinite alternate;
+
+}
+
+.background::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+    height:450px;
+
+    background:#9333ea33;
+
+    border-radius:50%;
+
+    bottom:-150px;
+    right:-150px;
+
+    filter:blur(120px);
+
+    animation:float2 12s infinite alternate;
+
+}
+
+@keyframes float1{
+
+    to{
+
+        transform:translate(100px,50px);
+
+    }
+
+}
+
+@keyframes float2{
+
+    to{
+
+        transform:translate(-120px,-80px);
+
+    }
+
+}
