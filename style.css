@@ -14,27 +14,77 @@ scroll-behavior:smooth;
 
 body{
 
-background:#121212;
+background:#FFF9F6;
 
 font-family:Inter,sans-serif;
 
-color:#f5f5f5;
+color:#3F3A4A;
+
+overflow-x:hidden;
 
 }
 
-/* ================= NAVBAR ================= */
+/* Background */
+
+.bg-circle{
+
+position:fixed;
+
+border-radius:50%;
+
+filter:blur(120px);
+
+z-index:-1;
+
+opacity:.5;
+
+}
+
+.one{
+
+width:320px;
+height:320px;
+
+background:#E8D9FF;
+
+top:-80px;
+left:-80px;
+
+}
+
+.two{
+
+width:350px;
+height:350px;
+
+background:#D7F6F1;
+
+bottom:-120px;
+right:-80px;
+
+}
+
+/* Navbar */
 
 nav{
 
 position:fixed;
 
-top:0;
+top:25px;
 
-width:100%;
+left:50%;
 
-height:75px;
+transform:translateX(-50%);
 
-padding:0 7%;
+width:90%;
+
+padding:18px 35px;
+
+background:rgba(255,255,255,.65);
+
+backdrop-filter:blur(16px);
+
+border-radius:18px;
 
 display:flex;
 
@@ -42,11 +92,7 @@ justify-content:space-between;
 
 align-items:center;
 
-background:rgba(18,18,18,.85);
-
-backdrop-filter:blur(15px);
-
-z-index:1000;
+box-shadow:0 10px 30px rgba(80,70,120,.08);
 
 }
 
@@ -54,9 +100,9 @@ z-index:1000;
 
 font-family:"JetBrains Mono";
 
-font-size:1rem;
+font-size:.95rem;
 
-color:#9DD9D2;
+color:#756A8C;
 
 }
 
@@ -64,9 +110,9 @@ nav ul{
 
 display:flex;
 
-list-style:none;
-
 gap:35px;
+
+list-style:none;
 
 }
 
@@ -74,7 +120,9 @@ nav a{
 
 text-decoration:none;
 
-color:#e7e7e7;
+color:#555;
+
+font-weight:500;
 
 transition:.3s;
 
@@ -82,11 +130,11 @@ transition:.3s;
 
 nav a:hover{
 
-color:#C8B6FF;
+color:#9C84F5;
 
 }
 
-.right-links{
+.right-nav{
 
 display:flex;
 
@@ -94,7 +142,7 @@ gap:20px;
 
 }
 
-/* ================= HERO ================= */
+/* Hero */
 
 .hero{
 
@@ -106,37 +154,45 @@ justify-content:center;
 
 align-items:center;
 
-padding:120px 20px;
+padding-top:90px;
 
 }
+
+/* Terminal */
 
 .terminal{
 
-width:900px;
+width:820px;
 
-max-width:100%;
+background:#6F6888;
 
-background:#1C1C1C;
-
-border-radius:16px;
-
-box-shadow:0 25px 60px rgba(0,0,0,.35);
+border-radius:24px;
 
 overflow:hidden;
 
+box-shadow:0 25px 60px rgba(100,90,130,.18);
+
 }
 
-.terminal-header{
+/* Terminal Header */
 
-height:45px;
+.terminal-top{
 
-background:#2B2B2B;
+height:55px;
+
+background:#7A7395;
 
 display:flex;
 
 align-items:center;
 
-padding-left:20px;
+padding-left:22px;
+
+}
+
+.buttons{
+
+display:flex;
 
 gap:10px;
 
@@ -146,9 +202,8 @@ gap:10px;
 .yellow,
 .green{
 
-width:13px;
-
-height:13px;
+width:14px;
+height:14px;
 
 border-radius:50%;
 
@@ -156,49 +211,55 @@ border-radius:50%;
 
 .red{
 
-background:#FF605C;
+background:#FFB5B5;
 
 }
 
 .yellow{
 
-background:#FFBD44;
+background:#FFE7A3;
 
 }
 
 .green{
 
-background:#00CA4E;
+background:#C8F7C5;
 
 }
 
-.terminal-body{
+/* Terminal Body */
 
-padding:50px;
+.terminal-content{
+
+padding:55px;
 
 font-family:"JetBrains Mono";
+
+color:white;
 
 }
 
 .prompt{
 
-color:#8BB174;
+margin-bottom:25px;
+
+color:#D8FFDA;
 
 }
 
-.terminal-body p{
+.prompt span{
 
-margin-bottom:25px;
+color:white;
 
-line-height:1.8;
+margin-left:8px;
 
 }
 
 h1{
 
-font-size:4rem;
-
 font-family:"Space Grotesk";
+
+font-size:4.2rem;
 
 margin-bottom:10px;
 
@@ -206,11 +267,13 @@ margin-bottom:10px;
 
 h2{
 
-font-size:1.8rem;
+font-size:1.7rem;
 
-color:#C8B6FF;
+font-weight:400;
 
-margin-bottom:25px;
+color:#F2EFFF;
+
+margin-bottom:28px;
 
 }
 
@@ -218,70 +281,55 @@ margin-bottom:25px;
 
 font-family:Inter;
 
-font-size:1.1rem;
+font-size:1.08rem;
 
-color:#cfcfcf;
+line-height:1.9;
 
-max-width:650px;
+max-width:620px;
+
+color:#F8F6FD;
 
 }
 
-.buttons{
+/* Buttons */
+
+.hero-buttons{
+
+margin-top:45px;
 
 display:flex;
 
-gap:20px;
-
-margin-top:40px;
+gap:18px;
 
 }
 
-.primary,
-.secondary{
-
-padding:14px 32px;
-
-border-radius:10px;
+.hero-buttons a{
 
 text-decoration:none;
+
+padding:14px 28px;
+
+border-radius:12px;
+
+background:#FFF8F2;
+
+color:#6B6483;
+
+font-weight:600;
 
 transition:.3s;
 
 }
 
-.primary{
-
-background:#8BB174;
-
-color:#111;
-
-font-weight:600;
-
-}
-
-.primary:hover{
+.hero-buttons a:hover{
 
 transform:translateY(-3px);
 
-}
-
-.secondary{
-
-border:1px solid #8BB174;
-
-color:#8BB174;
+background:#F6EFFF;
 
 }
 
-.secondary:hover{
-
-background:#8BB174;
-
-color:#111;
-
-}
-
-/* Responsive */
+/* Mobile */
 
 @media(max-width:900px){
 
@@ -291,15 +339,21 @@ display:none;
 
 }
 
-.right-links{
+.right-nav{
 
 display:none;
 
 }
 
-.terminal-body{
+.terminal{
 
-padding:30px;
+width:95%;
+
+}
+
+.terminal-content{
+
+padding:35px;
 
 }
 
@@ -311,11 +365,11 @@ font-size:2.8rem;
 
 h2{
 
-font-size:1.3rem;
+font-size:1.2rem;
 
 }
 
-.buttons{
+.hero-buttons{
 
 flex-direction:column;
 
