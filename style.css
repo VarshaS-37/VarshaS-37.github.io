@@ -1,6 +1,6 @@
-/* ==============================
-   GOOGLE FONTS & RESET
-================================= */
+/* ===========================
+   RESET
+=========================== */
 
 *{
     margin:0;
@@ -15,346 +15,263 @@ html{
 body{
 
     background:#FCF8FF;
-    color:#3C3557;
+
+    color:#494562;
+
     font-family:'Inter',sans-serif;
-    line-height:1.6;
+
+    overflow-x:hidden;
+
 }
 
-/* Scrollbar */
+/* ===========================
+   COLORS
+=========================== */
 
-::-webkit-scrollbar{
-    width:10px;
+:root{
+
+--bg:#FCF8FF;
+
+--white:#FFFFFF;
+
+--purple:#9D86F8;
+
+--lavender:#E9DEFF;
+
+--pink:#FFDCEB;
+
+--blue:#DDF2FF;
+
+--mint:#DDF8EE;
+
+--text:#494562;
+
+--light:#7F789F;
+
 }
 
-::-webkit-scrollbar-track{
-    background:#F5F1FF;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#C6B6FF;
-    border-radius:20px;
-}
-
-/* ==============================
-        NAVBAR
-================================= */
+/* ===========================
+   NAVBAR
+=========================== */
 
 header{
 
-    width:100%;
-    position:fixed;
+position:fixed;
 
-    top:0;
-    left:0;
+top:0;
 
-    z-index:1000;
+left:0;
 
-    backdrop-filter:blur(18px);
+width:100%;
 
-    background:rgba(252,248,255,.75);
+z-index:999;
 
-    border-bottom:1px solid rgba(180,170,255,.2);
+backdrop-filter:blur(20px);
+
+background:rgba(252,248,255,.8);
+
+border-bottom:1px solid #EEE7FF;
 
 }
 
 .navbar{
 
-    max-width:1300px;
+max-width:1300px;
 
-    margin:auto;
+margin:auto;
 
-    display:flex;
+padding:22px 35px;
 
-    justify-content:space-between;
+display:flex;
 
-    align-items:center;
+justify-content:space-between;
 
-    padding:18px 30px;
+align-items:center;
 
 }
 
 .logo{
 
-    font-family:'JetBrains Mono',monospace;
+font-family:'JetBrains Mono',monospace;
 
-    font-size:20px;
+font-size:21px;
 
-    font-weight:600;
+font-weight:700;
 
-    color:#8666FF;
-
-}
-
-.nav-links{
-
-    display:flex;
-
-    list-style:none;
-
-    gap:32px;
+color:var(--purple);
 
 }
 
-.nav-links a{
+.navbar ul{
 
-    text-decoration:none;
+display:flex;
 
-    color:#5A5376;
+gap:35px;
 
-    transition:.3s;
-
-    font-size:15px;
+list-style:none;
 
 }
 
-.nav-links a:hover{
+.navbar a{
 
-    color:#8666FF;
+text-decoration:none;
+
+color:var(--text);
+
+font-size:15px;
+
+transition:.3s;
 
 }
 
-/* ==============================
-        HERO
-================================= */
+.navbar a:hover{
+
+color:var(--purple);
+
+}
+
+/* ===========================
+   HERO
+=========================== */
 
 .hero{
 
-    max-width:1300px;
+max-width:1300px;
 
-    margin:120px auto 80px;
+margin:auto;
 
-    display:grid;
+padding-top:140px;
 
-    grid-template-columns:1.2fr .8fr;
+min-height:100vh;
 
-    align-items:center;
+display:grid;
 
-    gap:60px;
+grid-template-columns:1.1fr .9fr;
 
-    padding:20px;
+align-items:center;
+
+gap:70px;
 
 }
 
-/* ==============================
-      TERMINAL
-================================= */
+/* ===========================
+ TERMINAL
+=========================== */
 
 .terminal{
 
-    background:#605C8B;
+background:#F8F5FF;
 
-    border-radius:24px;
+border-radius:30px;
 
-    overflow:hidden;
+overflow:hidden;
 
-    box-shadow:
-    0 18px 60px rgba(96,92,139,.25);
+box-shadow:
 
-}
+0 20px 60px rgba(174,155,255,.20);
 
-.terminal-top{
-
-    height:50px;
-
-    background:#F7D9E8;
-
-    display:flex;
-
-    align-items:center;
-
-    padding-left:18px;
+border:1px solid #E8DFFF;
 
 }
 
-.dots{
+.terminal-header{
 
-    display:flex;
+height:55px;
 
-    gap:10px;
+background:#EFE5FF;
 
-}
+display:flex;
 
-.red,
-.yellow,
-.green{
+align-items:center;
 
-    width:13px;
-    height:13px;
-    border-radius:50%;
+padding-left:22px;
+
+gap:12px;
 
 }
 
-.red{
+.dot{
 
-    background:#FF6E70;
+width:14px;
+
+height:14px;
+
+border-radius:50%;
+
+}
+
+.pink{
+
+background:#FF8DB8;
 
 }
 
 .yellow{
 
-    background:#FFD166;
+background:#FFD76A;
 
 }
 
 .green{
 
-    background:#7AD77D;
+background:#7DDC87;
 
 }
 
 .terminal-body{
 
-    padding:45px;
+padding:45px;
 
-    font-family:'JetBrains Mono',monospace;
-
-    color:white;
-
-}
-
-.terminal-body h1{
-
-    margin:10px 0;
-
-    font-size:52px;
-
-    font-family:'Playfair Display',serif;
-
-    font-weight:700;
+font-family:'JetBrains Mono',monospace;
 
 }
 
 .terminal-body p{
 
-    font-size:20px;
+font-size:18px;
 
-    margin-top:8px;
+color:#6E6691;
+
+margin-bottom:12px;
+
+}
+
+.terminal-body h1{
+
+font-size:70px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:15px;
+
+color:#514A75;
+
+}
+
+.terminal-body h3{
+
+font-size:23px;
+
+font-weight:500;
+
+color:#8279A5;
 
 }
 
 .cursor{
 
-    animation:blink 1s infinite;
+animation:blink .8s infinite;
+
+font-size:22px;
 
 }
 
 @keyframes blink{
 
-    50%{
-        opacity:0;
-    }
+50%{
+
+opacity:0;
 
 }
-
-/* ==============================
-      DNA ICON
-================================= */
-
-.dna{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-}
-
-.dna i{
-
-    font-size:320px;
-
-    color:#C6B6FF;
-
-    opacity:.8;
-
-    animation:float 5s ease-in-out infinite;
-
-    text-shadow:
-
-    0 0 30px rgba(198,182,255,.5);
-
-}
-
-@keyframes float{
-
-    50%{
-
-        transform:translateY(-15px);
-
-    }
-
-}
-/*==================================
-        PROJECTS
-===================================*/
-
-.project-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:28px;
-
-}
-
-.project{
-
-    background:white;
-
-    padding:30px;
-
-    border-radius:22px;
-
-    border:1px solid #EEE8FF;
-
-    box-shadow:0 12px 35px rgba(170,160,255,.12);
-
-    transition:.35s;
-
-}
-
-.project:hover{
-
-    transform:translateY(-12px);
-
-    box-shadow:0 22px 55px rgba(170,160,255,.22);
-
-}
-
-.project h3{
-
-    font-family:'Playfair Display',serif;
-
-    font-size:28px;
-
-    margin-bottom:15px;
-
-    color:#574F7D;
-
-}
-
-.project p{
-
-    color:#6C648A;
-
-    margin-bottom:20px;
-
-}
-
-.project a{
-
-    text-decoration:none;
-
-    color:#8C6FFF;
-
-    font-weight:600;
-
-}
-
-.project a:hover{
-
-    letter-spacing:1px;
 
 }
