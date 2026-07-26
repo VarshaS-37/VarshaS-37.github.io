@@ -76,32 +76,42 @@ nav{
 
 }
 
-nav ul{
+nav{
+    max-width:1300px;
+    margin:0 auto;
+    padding:25px 40px;
 
     display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-family:"JetBrains Mono", monospace;
+    font-size:22px;
+    font-weight:700;
+    color:#9b78df;
+}
+
+nav ul{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:40px;
 
     list-style:none;
+    margin:0;
+    padding:0;
+}
 
-    gap:45px;
-
+nav ul li{
+    list-style:none;
 }
 
 nav a{
-
     text-decoration:none;
-
-    color:#8d7ba6;
-
+    color:#8b7da8;
     font-size:15px;
-
-    transition:.3s;
-
-}
-
-nav a:hover{
-
-    color:var(--purple);
-
 }
 
 main{
