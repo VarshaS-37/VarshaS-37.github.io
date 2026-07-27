@@ -1,43 +1,26 @@
 *{
-
 margin:0;
-
 padding:0;
-
 box-sizing:border-box;
-
 }
 
 body{
-
-background:#F7F5F2;
-
-font-family:'Inter',sans-serif;
-
+background:#e8f5dc;
+font-family:"Aref Ruqaa Ink", serif;
 color:#2E2E2E;
-
 }
 
 .container{
-
 width:90%;
-
 max-width:1150px;
-
 margin:40px auto;
-
 }
 
 .card{
-
 background:white;
-
 border-radius:28px;
-
 padding:50px;
-
 margin-bottom:35px;
-
 border:1px solid #ECE8E3;
 
 box-shadow:0 15px 35px rgba(0,0,0,.05);
