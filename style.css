@@ -20,22 +20,7 @@ body{
     position:relative;
 }
 
-/*==============================
-BACKGROUND GLOW
-==============================*/
 
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    z-index:-2;
-    background:
-    radial-gradient(circle at 15% 20%,rgba(120,170,255,.18),transparent 35%),
-    radial-gradient(circle at 85% 15%,rgba(170,140,255,.15),transparent 35%),
-    radial-gradient(circle at 30% 85%,rgba(120,255,220,.10),transparent 40%),
-    radial-gradient(circle at 80% 75%,rgba(255,255,255,.06),transparent 30%);
-    filter:blur(90px);
-}
 
 /*==============================
 CONTAINER
@@ -52,7 +37,7 @@ COMMON CARD
 ==============================*/
 
 .card{
-    background:rgba(255,255,255,.05);
+    
     border:1px solid rgba(255,255,255,.12);
     backdrop-filter:blur(18px);
     -webkit-backdrop-filter:blur(18px);
@@ -62,10 +47,7 @@ COMMON CARD
     transition:.35s;
 }
 
-.card:hover{
-    border-color:rgba(255,255,255,.22);
-    background:rgba(255,255,255,.07);
-}
+
 
 /*==============================
 NAVBAR
@@ -160,10 +142,6 @@ BUTTONS
     transition:.3s;
 }
 
-.buttons a:hover{
-    transform:translateY(-3px);
-    background:rgba(255,255,255,.12);
-}
 
 /*==============================
 SECTION TITLE
@@ -196,18 +174,14 @@ MINI CARD
 ==============================*/
 
 .mini-card{
-    background:rgba(255,255,255,.03);
+  
     border:1px solid rgba(255,255,255,.08);
     border-radius:18px;
     padding:22px;
     transition:.3s;
 }
 
-.mini-card:hover{
-    background:rgba(255,255,255,.07);
-    border-color:rgba(255,255,255,.16);
-    transform:translateY(-4px);
-}
+
 
 .mini-card h3{
     margin-bottom:12px;
@@ -245,9 +219,7 @@ INTEREST TAGS
     transition:.3s;
 }
 
-.interest-grid span:hover{
-    background:rgba(255,255,255,.12);
-}
+
 
 /*==============================
 TIMELINE
@@ -322,9 +294,7 @@ PROJECT CARDS
     transition:.3s;
 }
 
-.tags span:hover{
-    background:rgba(135,180,255,.22);
-}
+
 
 /*==============================
 SKILLS
@@ -342,15 +312,11 @@ SKILLS
     padding:10px 15px;
     margin-bottom:10px;
     border-radius:25px;
-    background:rgba(255,255,255,.05);
+  
     border:1px solid rgba(255,255,255,.08);
     transition:.3s;
 }
 
-.grid-4 .mini-card p:hover{
-    background:rgba(255,255,255,.12);
-    transform:translateX(6px);
-}
 
 /*==============================
 CONTACT
@@ -360,13 +326,9 @@ CONTACT
     text-align:center;
     padding:22px;
     border-radius:18px;
-    background:rgba(255,255,255,.05);
+
     border:1px solid rgba(255,255,255,.08);
     transition:.3s;
-}
-
-.grid-4 div:hover{
-    background:rgba(255,255,255,.12);
 }
 
 /*==============================
