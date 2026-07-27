@@ -2,22 +2,33 @@
 <html lang="en">
 
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Love+Light:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Varsha</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Varsha | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Love+Light&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
 <div class="container">
-    <nav class="card navbar">
+
+    <!-- =======================
+            NAVBAR
+    ======================== -->
+
+    <nav class="navbar">
+
         <div class="logo">
             Varsha
         </div>
+
         <ul>
             <li>About</li>
             <li>Experience</li>
@@ -26,28 +37,268 @@
             <li>Education</li>
             <li>Contact</li>
         </ul>
+
     </nav>
 
-    <section class="card hero">
+    <!-- =======================
+            HERO
+    ======================== -->
+
+    <section class="hero">
+
         <p class="small-heading">
             Hello,
         </p>
+
         <h1>
-            I'm Varsha
+            I'm Varsha.
         </h1>
+
         <h2>
-            Bioinformatics Graduate<br>
-            To be Computtional Biologist
+            Bioinformatics Graduate • Computational Biology • Tool Builder
         </h2>
+
         <p class="hero-text">
-            I enjoy exploring biology through code.
+            I enjoy building computational tools that transform biological
+            data into meaningful insights. My interests lie in
+            bioinformatics, transcriptomics, machine learning, and creating
+            software that helps researchers explore biological data more
+            effectively.
         </p>
+
         <div class="buttons">
             <a href="#">Resume</a>
             <a href="#">GitHub</a>
             <a href="#">LinkedIn</a>
         </div>
-    
+
+    </section>
+
+    <!-- =======================
+            ABOUT
+    ======================== -->
+
+    <section id="about">
+
+        <h2 class="section-title">
+            About
+        </h2>
+
+        <p class="hero-text">
+            I'm a Bioinformatics graduate with a background in Electronics and
+            Telecommunication Engineering. I enjoy combining biology and
+            programming to solve real-world problems through computational
+            approaches. My goal is to build intuitive software and
+            visualization tools that make biological research more accessible.
+        </p>
+
+    </section>
+
+    <!-- =======================
+            EXPERIENCE
+    ======================== -->
+
+    <section id="experience">
+
+        <h2 class="section-title">
+            Experience
+        </h2>
+
+        <div class="grid-3">
+
+            <div class="experience">
+
+                <h3>IISER Pune</h3>
+
+                <p>
+                    Research Intern
+                </p>
+
+            </div>
+
+            <div class="experience">
+
+                <h3>JSS Academy</h3>
+
+                <p>
+                    MSc Bioinformatics
+                </p>
+
+            </div>
+
+            <div class="experience">
+
+                <h3>Electronics</h3>
+
+                <p>
+                    B.E. Electronics & Telecommunication
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+            PROJECTS
+    ======================== -->
+
+    <section id="projects">
+
+        <h2 class="section-title">
+            Selected Projects
+        </h2>
+
+        <div class="grid-2">
+
+            <div class="project">
+
+                <h3>Bat RNA Atlas</h3>
+
+                <p>
+                    Interactive Shiny application for exploring bat
+                    transcriptomic datasets.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Dengue Biomarkers</h3>
+
+                <p>
+                    RNA-seq pipeline for identifying transcriptomic biomarkers
+                    associated with dengue infection.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>MCQ Ranking</h3>
+
+                <p>
+                    Deep learning model for predicting the top answers for
+                    multiple-choice questions.
+                </p>
+
+            </div>
+
+            <div class="project">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Personal portfolio built using HTML and CSS.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+            SKILLS
+    ======================== -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="grid-3">
+
+            <div class="skill-group">
+
+                <h3>Languages</h3>
+
+                <ul>
+                    <li>Python</li>
+                    <li>R</li>
+                    <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+
+            </div>
+
+            <div class="skill-group">
+
+                <h3>Bioinformatics</h3>
+
+                <ul>
+                    <li>DESeq2</li>
+                    <li>STAR</li>
+                    <li>HISAT2</li>
+                    <li>featureCounts</li>
+                    <li>Nextflow</li>
+                </ul>
+
+            </div>
+
+            <div class="skill-group">
+
+                <h3>Tools</h3>
+
+                <ul>
+                    <li>Git</li>
+                    <li>Shiny</li>
+                    <li>Plotly</li>
+                    <li>Flask</li>
+                    <li>Linux</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+            EDUCATION
+    ======================== -->
+
+    <section id="education">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="education">
+
+            <h3>
+                Master of Science in Bioinformatics
+            </h3>
+
+            <p>
+                JSS Academy of Higher Education & Research
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =======================
+            CONTACT
+    ======================== -->
+
+    <section id="contact" class="contact">
+
+        <h2 class="section-title">
+            Let's Connect
+        </h2>
+
+        <p>
+            varsha@email.com
+        </p>
+
+        <p>
+            GitHub • LinkedIn
+        </p>
+
     </section>
 
 </div>
