@@ -1,211 +1,380 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varsha | Portfolio</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Love+Light&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
 <body>
 
 <div class="container">
 
-    <!-- NAVIGATION -->
+    <!-- ================= NAVBAR ================= -->
 
     <nav class="card navbar">
 
-        <div class="logo">
-            Varsha
-        </div>
+        <div class="logo">Varsha</div>
 
         <ul>
             <li>About</li>
             <li>Experience</li>
             <li>Projects</li>
             <li>Skills</li>
+            <li>Hackathons</li>
             <li>Education</li>
             <li>Contact</li>
         </ul>
 
     </nav>
 
-    <!-- HERO -->
+    <!-- ================= HERO ================= -->
 
     <section class="card hero">
 
-        <p class="small-heading">
-            Hello,
-        </p>
+        <div class="hero-left">
 
-        <h1>
-            I'm Varsha.
-        </h1>
+            <p class="small-heading">$ whoami</p>
 
-        <h2>
-            Bioinformatics Graduate • Computational Biology
-        </h2>
+            <h1>Hi, I'm Varsha 👋</h1>
 
-        <p class="hero-text">
-            I enjoy building computational tools that transform biological data into meaningful insights. My interests lie in transcriptomics, machine learning, and developing software that makes biological research easier to explore.
-        </p>
+            <h2>
+                Bioinformatics Graduate<br>
+                Computational Biologist<br>
+                Tool Builder
+            </h2>
 
-        <div class="buttons">
-            <a href="#">Resume</a>
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
-        </div>
+            <p class="hero-text">
+                I enjoy building computational tools that simplify biological
+                research and transform biological data into meaningful insights.
+            </p>
 
-    </section>
+            <div class="buttons">
 
-    <!-- ABOUT -->
+                <a href="#">Resume</a>
 
-    <section class="card">
+                <a href="#">GitHub</a>
 
-        <h2 class="section-title">
-            About
-        </h2>
+                <a href="#">LinkedIn</a>
 
-        <p class="hero-text">
-            I'm a Bioinformatics graduate with a background in Electronics and Telecommunication Engineering. I enjoy combining biology and programming to build intuitive software, analyze complex biological datasets, and create visualizations that help researchers understand data better.
-        </p>
-
-    </section>
-
-    <!-- EXPERIENCE -->
-
-    <section class="card">
-
-        <h2 class="section-title">
-            Experience
-        </h2>
-
-        <div class="grid-3">
-
-            <div class="mini-card">
-                <h3>IISER Pune</h3>
-                <p>
-                    Research Intern<br>
-                    Computational Biology
-                </p>
-            </div>
-
-            <div class="mini-card">
-                <h3>JSS Academy</h3>
-                <p>
-                    MSc Bioinformatics
-                </p>
-            </div>
-
-            <div class="mini-card">
-                <h3>B.E.</h3>
-                <p>
-                    Electronics & Telecommunication Engineering
-                </p>
             </div>
 
         </div>
 
     </section>
 
-    <!-- PROJECTS -->
+
+    <!-- ================= SUMMARY + INTERESTS ================= -->
+
+    <div class="grid-2">
+
+        <section class="card">
+
+            <h2 class="section-title">
+                Summary
+            </h2>
+
+            <p>
+                Bioinformatics graduate with a background in biology and engineering,
+                interested in developing computational tools that simplify biological research.
+            </p>
+
+        </section>
+
+
+        <section class="card">
+
+            <h2 class="section-title">
+                Current Interests
+            </h2>
+
+            <div class="interest-grid">
+
+                <span>Transcriptomics</span>
+
+                <span>Machine Learning</span>
+
+                <span>RNA-seq</span>
+
+                <span>Computational Biology</span>
+
+                <span>Tool Development</span>
+
+                <span>Data Visualization</span>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- ================= EXPERIENCE ================= -->
 
     <section class="card">
 
         <h2 class="section-title">
-            Selected Projects
+            Experience Journey
+        </h2>
+
+        <div class="timeline">
+
+            <div class="line"></div>
+
+            <div class="dot"></div>
+
+            <div class="dot"></div>
+
+        </div>
+
+        <div class="grid-2">
+
+            <div class="mini-card">
+
+                <h3>IISER Bhopal</h3>
+
+                <h4>Project Student</h4>
+
+                <p>Feb 2026 – May 2026</p>
+
+                <p>
+                    DenguScope:
+                    RNA-seq analysis using FastQC,
+                    STAR, featureCounts,
+                    DESeq2 and developed
+                    a Shiny web application.
+                </p>
+
+            </div>
+
+
+            <div class="mini-card">
+
+                <h3>JSSAHER Mysore</h3>
+
+                <h4>Student Intern</h4>
+
+                <p>Aug 2025 – Oct 2025</p>
+
+                <p>
+                    GrainToGut:
+                    Functional prediction using
+                    PICRUSt and developed
+                    a Streamlit application.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section class="card">
+
+        <h2 class="section-title">
+
+            Featured Projects
+
         </h2>
 
         <div class="grid-2">
 
             <div class="mini-card">
-                <h3> Atlas</h3>
+
+                <h3>MHC-I Epitope Prediction</h3>
+
                 <p>
-                    Interactive Shiny application for exploring dengue transcriptomic datasets.
+                    Nextflow pipeline for automated vaccine
+                    candidate prediction.
                 </p>
+
+                <div class="tags">
+
+                    <span>Python</span>
+
+                    <span>Nextflow</span>
+
+                    <span>BLAST</span>
+
+                </div>
+
             </div>
 
-            <div class="mini-card">
-                <h3>Dengue Biomarkers</h3>
-                <p>
-                    RNA-seq pipeline for biomarker discovery.
-                </p>
-            </div>
+
 
             <div class="mini-card">
-                <h3>MCQ Ranking</h3>
+
+                <h3>DenguScope</h3>
+
                 <p>
-                    Deep learning model for answer ranking.
+                    RNA-seq biomarker discovery
+                    and visualization platform.
                 </p>
+
+                <div class="tags">
+
+                    <span>R</span>
+
+                    <span>DESeq2</span>
+
+                    <span>Shiny</span>
+
+                </div>
+
             </div>
 
+
+
             <div class="mini-card">
-                <h3>TrekMate</h3>
+
+                <h3>GrainToGut</h3>
+
                 <p>
-                    Flask-based trekking management web application.
+                    Functional prediction of
+                    probiotic bacteria.
                 </p>
+
+                <div class="tags">
+
+                    <span>PICRUSt</span>
+
+                    <span>Python</span>
+
+                    <span>Streamlit</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="mini-card">
+
+                <h3>Rosalind Problems</h3>
+
+                <p>
+                    Solving bioinformatics algorithms
+                    using Python.
+                </p>
+
+                <div class="tags">
+
+                    <span>Python</span>
+
+                    <span>Algorithms</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="mini-card">
+
+                <h3>SafePath</h3>
+
+                <p>
+                    Obstacle-aware cruise
+                    control system.
+                </p>
+
+            </div>
+
+
+
+            <div class="mini-card">
+
+                <h3>Business Analytics</h3>
+
+                <p>
+                    Optimizing ROI and
+                    market expansion.
+                </p>
+
             </div>
 
         </div>
 
     </section>
 
-    <!-- SKILLS -->
+
+
+    <!-- ================= SKILLS ================= -->
 
     <section class="card">
 
         <h2 class="section-title">
-            Skills
+
+            Tech Toolbox
+
         </h2>
 
-        <div class="grid-3">
+        <div class="grid-4">
 
             <div class="mini-card">
 
                 <h3>Programming</h3>
 
-                <p>
-                    Python<br>
-                    R<br>
-                    SQL<br>
-                    HTML<br>
-                    CSS
-                </p>
+                <p>Python</p>
+
+                <p>R</p>
+
+                <p>SQL</p>
+
+                <p>Linux</p>
+
+                <p>C</p>
 
             </div>
+
+
+
+            <div class="mini-card">
+
+                <h3>Transcriptomics</h3>
+
+                <p>FastQC</p>
+
+                <p>STAR</p>
+
+                <p>HISAT2</p>
+
+                <p>featureCounts</p>
+
+                <p>StringTie</p>
+
+                <p>DESeq2</p>
+
+            </div>
+
+
+
+            <div class="mini-card">
+
+                <h3>Libraries</h3>
+
+                <p>Pandas</p>
+
+                <p>Biopython</p>
+
+                <p>Scikit-learn</p>
+
+                <p>Matplotlib</p>
+
+                <p>Plotly</p>
+
+            </div>
+
+
 
             <div class="mini-card">
 
                 <h3>Bioinformatics</h3>
 
-                <p>
-                    DESeq2<br>
-                    STAR<br>
-                    HISAT2<br>
-                    featureCounts<br>
-                    Nextflow
-                </p>
+                <p>Nextflow</p>
 
-            </div>
+                <p>Cytoscape</p>
 
-            <div class="mini-card">
+                <p>PyMOL</p>
 
-                <h3>Tools</h3>
-
-                <p>
-                    Linux<br>
-                    Git<br>
-                    Flask<br>
-                    Shiny<br>
-                    Plotly
-                </p>
+                <p>AutoDock</p>
 
             </div>
 
@@ -213,87 +382,113 @@
 
     </section>
 
-    <!-- HACKATHONS -->
+
+
+    <!-- ================= HACKATHONS + EDUCATION ================= -->
+
+    <div class="grid-2">
+
+        <section class="card">
+
+            <h2 class="section-title">
+
+                Hackathons
+
+            </h2>
+
+            <div class="mini-card">
+
+                <h3>BioHackathon</h3>
+
+                <p>
+                    Multi-omics biomarker discovery
+                    using CPTAC LUAD data.
+                </p>
+
+            </div>
+
+            <br>
+
+            <div class="mini-card">
+
+                <h3>ML for Protein Engineering</h3>
+
+                <p>
+                    PD-1 antibody redesign
+                    using AI.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="card">
+
+            <h2 class="section-title">
+
+                Education
+
+            </h2>
+
+            <div class="mini-card">
+
+                <h3>M.Sc Bioinformatics</h3>
+
+                <p>JSSAHER</p>
+
+                <p>CGPA 8.3</p>
+
+            </div>
+
+            <br>
+
+            <div class="mini-card">
+
+                <h3>IIT Madras</h3>
+
+                <p>Diploma in Data Science</p>
+
+            </div>
+
+            <br>
+
+            <div class="mini-card">
+
+                <h3>B.E Electronics</h3>
+
+                <p>BMS Institute of Technology</p>
+
+                <p>CGPA 8.12</p>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <!-- ================= CONTACT ================= -->
 
     <section class="card">
 
         <h2 class="section-title">
-            Hackathons
+
+            Let's Connect
+
         </h2>
 
-        <div class="grid-2">
+        <div class="grid-4">
 
-            <div class="mini-card">
-                <h3>Hackathon 1</h3>
-                <p>
-                    Add details here.
-                </p>
-            </div>
+            <div>Email</div>
 
-            <div class="mini-card">
-                <h3>Hackathon 2</h3>
-                <p>
-                    Add details here.
-                </p>
-            </div>
+            <div>GitHub</div>
 
-        </div>
+            <div>LinkedIn</div>
 
-    </section>
-
-    <!-- EDUCATION -->
-
-    <section class="card">
-
-        <h2 class="section-title">
-            Education
-        </h2>
-
-        <div class="grid-2">
-
-            <div class="mini-card">
-
-                <h3>M.Sc. Bioinformatics</h3>
-
-                <p>
-                    JSS Academy of Higher Education & Research
-                </p>
-
-            </div>
-
-            <div class="mini-card">
-
-                <h3>B.E. Electronics</h3>
-
-                <p>
-                    Electronics & Telecommunication Engineering
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- CONTACT -->
-
-    <section class="card">
-
-        <h2 class="section-title">
-            Contact
-        </h2>
-
-        <p class="hero-text">
-            Feel free to reach out for collaborations, research opportunities, or just to say hello.
-        </p>
-
-        <div class="buttons">
-
-            <a href="#">Email</a>
-
-            <a href="#">GitHub</a>
-
-            <a href="#">LinkedIn</a>
+            <div>Resume</div>
 
         </div>
 
@@ -302,5 +497,3 @@
 </div>
 
 </body>
-
-</html>
