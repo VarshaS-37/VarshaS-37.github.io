@@ -3,146 +3,86 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
-
 body{
 background:#1f3a52;
 font-family: "Josefin Sans", sans-serif;
 color:#2E2E2E;
 }
-
 .container{
 width:90%;
 max-width:1150px;
-margin:40px auto;
+margin:20px auto;
 }
-
 .card{
 background:white;
 border-radius:28px;
 padding:50px;
 margin-bottom:35px;
 border:1px solid #ECE8E3;
-
 box-shadow:0 15px 35px rgba(0,0,0,.05);
-
 }
 .navbar{
-
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
 }
 .logo{
-
 font-family:"Love Light", cursive;
-
 font-size:60px;
-
 font-weight:400;
-
 }
 .navbar ul{
-
 display:flex;
-
 gap:35px;
-
 list-style:none;
-
 font-size:16px;
-
 color:#666;
-
 }
 .navbar li{
-
 cursor:pointer;
-
 transition:.3s;
-
 }
-
 .navbar li:hover{
-
 color:#A68FD0;
-
 }
 .hero{
-
 padding:90px;
-
 }
 .small-heading{
-
 font-size:22px;
-
 color:#888;
-
 margin-bottom:20px;
-
 }
 .hero h2{
-
 font-size:30px;
-
 font-weight:500;
-
 margin-bottom:35px;
-
 color:#555;
-
 }
 .hero h1{
-
-font-family:'Playfair Display',serif;
-
 font-size:72px;
-
 margin-bottom:20px;
-
 }
 .hero-text{
-
 font-size:20px;
-
 line-height:1.9;
-
 max-width:700px;
-
 color:#666;
-
 }
 .buttons{
-
 margin-top:50px;
-
 display:flex;
-
 gap:20px;
-
 }
 .buttons a{
-
 text-decoration:none;
-
 padding:14px 28px;
-
 border-radius:15px;
-
 background:#EFE8FB;
-
 color:#5E4B8B;
-
 font-weight:600;
-
 transition:.3s;
-
 }
 .buttons a:hover{
-
 background:#DCD0F5;
-
 }
