@@ -14,7 +14,7 @@ max-width:1150px;
 margin:20px auto;
 }
 .card{
-background:white;
+backdrop-filter:blur(3px);
 border-radius:28px;
 padding:50px;
 margin-bottom:35px;
