@@ -23,3 +23,83 @@ body{
     font-family:'Inter',sans-serif;
 
 }
+:root{
+
+    --lavender:#E8E0F5;
+
+    --purple:#7B6AA8;
+
+    --terminal:#3F4266;
+
+    --cream:#FFF9F7;
+
+    --pink:#FFE5E5;
+
+    --green:#DCEFD9;
+
+    --blue:#DCEAF8;
+
+    --text:#2F2E41;
+
+}
+header{
+
+    width:100%;
+
+    padding:30px 0;
+
+}
+
+.navbar{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+.logo{
+
+    font-family:'JetBrains Mono',monospace;
+
+    color:var(--purple);
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+.navbar ul{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:var(--purple);
+
+}
