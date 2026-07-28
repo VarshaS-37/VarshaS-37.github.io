@@ -4,511 +4,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varsha | Portfolio</title>
-
+    <title>Varsha S</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Love+Light&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
 
-<div class="container">
-
-    <!-- ================= NAVBAR ================= -->
-
-    <nav class="card navbar">
-
-        <div class="logo">Varsha</div>
-
-        <ul>
-            <li>About</li>
-            <li>Experience</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Hackathons</li>
-            <li>Education</li>
-            <li>Contact</li>
-        </ul>
-
-    </nav>
-
-    <!-- ================= HERO ================= -->
-
-    <section class="card hero">
-
-        <div class="hero-left">
-
-            <p class="small-heading">$ whoami</p>
-
-            <h1>Hi, I'm Varsha 👋</h1>
-
-            <h2>
-                Bioinformatics Graduate<br>
-                Computational Biologist<br>
-                Tool Builder
-            </h2>
-
-            <p class="hero-text">
-                I enjoy building computational tools that simplify biological
-                research and transform biological data into meaningful insights.
-            </p>
-
-            <div class="buttons">
-
-                <a href="#">Resume</a>
-
-                <a href="#">GitHub</a>
-
-                <a href="#">LinkedIn</a>
-
+<body>
+    <div id="dna-bg">
+        <pre id="dna-dim"></pre>
+        <pre id="dna-bright"></pre>
+        <div id="orb"></div>
+    </div>
+    <div class="container">
+        <nav class="card navbar">
+            <div class="logo">Varsha S</div>
+        </nav>
+        <section class="card hero">
+            <div class="hero-left">
+                <div class="status">
+                   
+                    <span>Compiling Biology.....</span>
+                    <span class="spinner"></span>
+                </div>
+                <h2>
+                    Bioinformatics Graduate<br>
+                    Aspiring Computational Biologist<br>
+                </h2>
+                <p class="hero-text">
+                   On a journey to build tools for biological discovery.....
+                </p>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/10LuJ5_bR-t4EY7Ng_J0WQRPJ7Y0su-F-/view?usp=sharing">Resume</a>
+                    <a href="https://github.com/VarshaS-37">GitHub</a>
+                    <a href="https://www.linkedin.com/in/varsha-bio-prog-data/">LinkedIn</a>
+                </div>
             </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SUMMARY + INTERESTS ================= -->
-
-    <div class="grid-2">
-
+        </section>
+        <!-- ================= EXPERIENCE ================= -->
         <section class="card">
-
+            <h2 class="section-title">The Journey So Far</h2>
+            <div class="grid-2">
+                <!-- DENGUSCOPE -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>DenguScope</h3>
+                        <a href="https://varshas.shinyapps.io/Denguscope/" class="project-link">
+                            Visit the App ↗
+                        </a>
+                    </div>
+                    <div class="exp-meta">
+                        <span>IISER Bhopal</span>
+                        <span>Feb 2026 – May 2026</span>
+                    </div>
+                    
+                    <img src="1.jpg" class="project-image">
+                
+                    <div class="tech-stack">
+                        <span>FastQC</span>
+                        <span>fastp</span>
+                        <span>STAR</span>
+                        <span>featureCounts</span>
+                        <span>R</span>
+                        <span>DESeq2</span>
+                        <span>Plotly</span>
+                        <span>ggplot2</span>
+                        <span>R Shiny</span>
+                    </div>
+                    <p class="exp-desc">
+                        Analyzed RNA-seq data from 73 dengue samples to identify transcriptomic biomarkers and developed a webapp for interactive visualization and exploration of results.
+                    </p>
+                </div>
+                <!-- GRAIN2GUT -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Grain2Gut</h3>
+                        <a href="https://grain2gut.streamlit.app/" class="project-link">
+                            Visit the App ↗
+                        </a>
+                    </div>
+                    <div class="exp-meta">
+                        <span>JSSAHER Mysore</span>
+                        <span>Aug 2025 – Oct 2025</span>
+                    </div>
+                    <img src="2.jpg" class="project-image">
+                    <div class="tech-stack">
+                        <span>PICRUSt</span>
+                        <span>16S rRNA</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <p class="exp-desc">
+                        Predicted functional profiles of four millet-derived lactic acid bacteria using 16S rRNA sequences and PICRUSt, and built a webapp for visualization and exploration of results.
+                    </p>
+                </div>
+            </div>
+        </section>
+<div class="projects-container">
+        <section class="card project-section">
+            <!-- ================= BIOINFORMATICS PROJECTS ================= -->
             <h2 class="section-title">
-                Summary
+                Exploring Biology through Code
             </h2>
+            <div class="grid-3 right">
+                <!-- MHC-I -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>MHC-I Epitope Prediction</h3>
+                        <a href="https://github.com/VarshaS-37/MHC_I_T-Cell_Epitope_Prediction_Pipeline" 
+                        class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <img src="4.png" class="project-image">
+                    <div class="tech-stack">
+                        <span>Nextflow</span>
+                        <span>BLASTP</span>
+                        <span>IEDB API</span>
+                    </div>
+                    <p class="exp-desc">
+                        Developed a Nextflow pipeline for MHC-I epitope prediction using UniProt sequences, IEDB API, and BLASTP-based filtering to prioritize vaccine candidate epitopes.
+                    </p>
+                </div>
+                <!-- ROSALIND -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Rosalind Problems</h3>
+                        <a href="https://github.com/VarshaS-37/ROSALIND_Solutions"  
+                        class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <img src="3.jpg" class="project-image">
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Algorithms</span>
+                    </div>
+                    <p class="exp-desc">
+                        Learning basics of algorithms behind bioinformatics tools.
+                    </p>
+                </div>
+            </div>
+        </section>  
 
+        <section class="card project-section">
+            <!-- ================= DATA SCIENCE PROJECTS ================= -->
+            <h2 class="section-title">
+                Finding Patterns
+            </h2>
+            <div class="grid-3">
+                <!-- COMMENT CLASSIFICATION -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Comment Category Prediction</h3>
+                        <a href="https://github.com/VarshaS-37/Data_Science_Projects_Repo/tree/main/ML_Project" 
+                        class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <img src="5.png" class="project-image">
+                    <div class="tech-stack">
+                        <span>Scikit-Learn</span>
+                        <span>Matplotlib</span>
+                        <span>Pandas</span>
+                        <span>Seaborn</span>
+                    </div>
+                    <p class="exp-desc">
+                        Built a multi-class comment classification model using TF-IDF and machine learning algorithms with preprocessing and model tuning.
+                    </p>
+                </div>
+                <!-- BUSINESS ANALYTICS -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>Business Data Management</h3>
+                        <a href="https://github.com/VarshaS-37/Data_Science_Projects_Repo/tree/main/BDM_Project" 
+                        class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <img src="6.jpg" class="project-image">
+                    <div class="tech-stack">
+                        <span>Excel</span>
+                        <span>Data Analysis</span>
+                    </div>
+                    <p class="exp-desc">
+                        Analyzed business data of VHS Designs to predict Non-seasonal ROI, identify potential locations, and generate insights for market expansion.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card project-section">
+            <!-- ================= ELECTRONICS PROJECTS ================= -->
+            <h2 class="section-title">
+                Where It All Started
+            </h2>
+            <div class="grid-3">
+                <!-- SAFEPATH -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>SafePath</h3>
+                        <a href="https://github.com/VarshaS-37/SafePath---Advanced-Obstacle-Aware-Cruise-Control-System" 
+                        target="_blank" 
+                        class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <img src="7.png" class="project-image">
+                    <div class="tech-stack">
+                        <span>YOLOv8</span>
+                        <span>Raspberry Pi</span>
+                        <span>Arduino</span>
+                        <span>LiDAR</span>
+                    </div>
+                    <p class="exp-desc">
+                        Developed a pothole detection system using YOLOv8 and LiDAR-based depth estimation with Raspberry Pi and Arduino.
+                    </p>
+                </div>
+                <!-- PIENERGI -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>PiEnergi</h3>
+                        <a href="https://github.com/VarshaS-37/Electronics_Engineering_Repo/tree/main/PiEnergi" 
+                        target="_blank" 
+                        class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <img src="8.png" class="project-image">
+                    <div class="tech-stack">
+                        <span>Arduino</span>
+                        <span>Electronics</span>
+                        <span>Piezo Sensors</span>
+                    </div>
+                    <p class="exp-desc">
+                        Designed a piezoelectric energy harvesting system using piezo sensors and Arduino to capture energy from vehicle deceleration.
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+            <!-- ================= HACKATHONS + EDUCATION ================= -->
+        <section class="card">
+            <h2 class="section-title">
+                Learning Under Pressure
+            </h2>
+            <div class="grid-2">
+                <!-- BIOHACKATHON -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>BioHackathon</h3>
+                        <a href="https://github.com/VarshaS-37/Bio_Hackathon" class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <div class="exp-meta">
+                        <span>UEM Kolkata & IIT Guwahati</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Multi-omics</span>
+                        <span>Transcriptomics</span>
+                        <span>Proteomics</span>
+                        <span>Genomics</span>
+
+                    </div>
+                    <p class="exp-desc">
+                        Analyzed the CPTAC-LUAD multi-omics dataset
+                        integrating genomic, transcriptomic, and proteomic
+                        data to identify potential lung adenocarcinoma
+                        biomarkers.
+                    </p>
+                </div>
+                <!-- ML PROTEIN ENGINEERING -->
+                <div class="experience-card">
+                    <div class="exp-header">
+                        <h3>ML for Protein Engineering</h3>
+                        <a href="https://github.com/VarshaS-37/IBAB_Hackathon" class="project-link">
+                            GitHub ↗
+                        </a>
+                    </div>
+                    <div class="exp-meta">
+                        <span>IBAB × Locksmith Bio</span>
+                    </div>
+                    <div class="tech-stack">
+                        <span>ProteinMPNN</span>
+                        <span>AlphaFold2 Multimer</span>
+                        <span>PyMOL</span>
+                        <span>ABodyBuilder</span>
+                    </div>
+                    <p class="exp-desc">
+                        Developed a computational workflow for de novo PD-1 antibody design, 3D structure prediction, and antibody–antigen interaction analysis.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ================= PUBLICATIONS ================= -->
+        <section class="card">
+            <h2 class="section-title">
+                From Ideas to Publication
+            </h2>
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Biomarker Discovery for Lung Adenocarcinoma Using CPTAC-LUAD Multi-Omics Dataset</h3>
+                    <a href="https://ajabtr.smartsociety.org/wp-content/uploads/2026/07/Paper-4.pdf" target="_blank" class="project-link">
+                        Read Paper ↗
+                    </a>
+                </div>
+                <div class="exp-meta">
+                    <span>American Journal of Applied Bio-Technology Research (AJABTR)</span>
+                    <span>2026</span>
+                </div>
+                <div class="tech-stack">
+                    <span>Multi-omics</span>
+                    <span>Lung Cancer</span>
+                    <span>CPTAC</span>
+                    <span>LinkedOmics</span>
+                    <span>Biomarkers</span>
+                </div>
+                <p class="exp-desc">
+                    Co-authored a research paper on multi-omics analysis of the
+                    CPTAC-LUAD dataset, integrating genomic, transcriptomic,
+                    and proteomic data to identify potential biomarkers for
+                    lung adenocarcinoma. The work was sponsored by the
+                    BioHackathon organized by UEM Kolkata and IIT Guwahati.
+                </p>
+            </div>
+        </section>
+        <!-- ================= SKILLS ================= -->
+        <section class="card">
+            <h2 class="section-title">
+                Tech Toolbox
+            </h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <h3>🧬 Bioinformatics</h3>
+                    <ul>
+                        <li>Nextflow</li>
+                        <li>DESeq2</li>
+                        <li>Biopython</li>
+                        <li>PyMOL</li>
+                        <li>AutoDock</li>
+                        <li>Cytoscape</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h3>🔬 Transcriptomics</h3>
+                    <ul>
+                        <li>FastQC</li>
+                        <li>STAR</li>
+                        <li>HISAT2</li>
+                        <li>featureCounts</li>
+                        <li>StringTie</li>
+                        <li>CIRIquant</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h3>💻 Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>R</li>
+                        <li>SQL</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h3>📊 Data Science</h3>
+                    <ul>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Scikit-learn</li>
+                        <li>Matplotlib</li>
+                        <li>Plotly</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h3>⚡ Electronics</h3>
+                    <ul>
+                        <li>Arduino</li>
+                        <li>Raspberry Pi</li>
+                        <li>MATLAB</li>
+                        <li>Simulink</li>
+                    </ul>
+                </div>
+                <div class="tool-card">
+                    <h3>🛠 Environment</h3>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Google Colab</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+            <!-- ================= END ================= -->
+        <section class="card ending-card">
+            <h2>Until the Next Compilation 🧬</h2>
             <p>
-                Bioinformatics graduate with a background in biology and engineering,
-                interested in developing computational tools that simplify biological research.
+                What started with circuits led to cells and the journey continues through code.....Bye bye
             </p>
-
         </section>
-
-
-        <section class="card">
-
-            <h2 class="section-title">
-                Current Interests
-            </h2>
-
-            <div class="interest-grid">
-
-                <span>Transcriptomics</span>
-
-                <span>Machine Learning</span>
-
-                <span>RNA-seq</span>
-
-                <span>Computational Biology</span>
-
-                <span>Tool Development</span>
-
-                <span>Data Visualization</span>
-
-            </div>
-
-        </section>
-
     </div>
 
-
-
-    <!-- ================= EXPERIENCE ================= -->
-
-    <section class="card">
-
-        <h2 class="section-title">
-            Experience Journey
-        </h2>
-
-        <div class="timeline">
-
-            <div class="line"></div>
-
-            <div class="dot"></div>
-
-            <div class="dot"></div>
-
-        </div>
-
-        <div class="grid-2">
-
-            <div class="mini-card">
-
-                <h3>IISER Bhopal</h3>
-
-                <h4>Project Student</h4>
-
-                <p>Feb 2026 – May 2026</p>
-
-                <p>
-                    DenguScope:
-                    RNA-seq analysis using FastQC,
-                    STAR, featureCounts,
-                    DESeq2 and developed
-                    a Shiny web application.
-                </p>
-
-            </div>
-
-
-            <div class="mini-card">
-
-                <h3>JSSAHER Mysore</h3>
-
-                <h4>Student Intern</h4>
-
-                <p>Aug 2025 – Oct 2025</p>
-
-                <p>
-                    GrainToGut:
-                    Functional prediction using
-                    PICRUSt and developed
-                    a Streamlit application.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section class="card">
-
-        <h2 class="section-title">
-
-            Featured Projects
-
-        </h2>
-
-        <div class="grid-2">
-
-            <div class="mini-card">
-
-                <h3>MHC-I Epitope Prediction</h3>
-
-                <p>
-                    Nextflow pipeline for automated vaccine
-                    candidate prediction.
-                </p>
-
-                <div class="tags">
-
-                    <span>Python</span>
-
-                    <span>Nextflow</span>
-
-                    <span>BLAST</span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>DenguScope</h3>
-
-                <p>
-                    RNA-seq biomarker discovery
-                    and visualization platform.
-                </p>
-
-                <div class="tags">
-
-                    <span>R</span>
-
-                    <span>DESeq2</span>
-
-                    <span>Shiny</span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>GrainToGut</h3>
-
-                <p>
-                    Functional prediction of
-                    probiotic bacteria.
-                </p>
-
-                <div class="tags">
-
-                    <span>PICRUSt</span>
-
-                    <span>Python</span>
-
-                    <span>Streamlit</span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>Rosalind Problems</h3>
-
-                <p>
-                    Solving bioinformatics algorithms
-                    using Python.
-                </p>
-
-                <div class="tags">
-
-                    <span>Python</span>
-
-                    <span>Algorithms</span>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>SafePath</h3>
-
-                <p>
-                    Obstacle-aware cruise
-                    control system.
-                </p>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>Business Analytics</h3>
-
-                <p>
-                    Optimizing ROI and
-                    market expansion.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section class="card">
-
-        <h2 class="section-title">
-
-            Tech Toolbox
-
-        </h2>
-
-        <div class="grid-4">
-
-            <div class="mini-card">
-
-                <h3>Programming</h3>
-
-                <p>Python</p>
-
-                <p>R</p>
-
-                <p>SQL</p>
-
-                <p>Linux</p>
-
-                <p>C</p>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>Transcriptomics</h3>
-
-                <p>FastQC</p>
-
-                <p>STAR</p>
-
-                <p>HISAT2</p>
-
-                <p>featureCounts</p>
-
-                <p>StringTie</p>
-
-                <p>DESeq2</p>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>Libraries</h3>
-
-                <p>Pandas</p>
-
-                <p>Biopython</p>
-
-                <p>Scikit-learn</p>
-
-                <p>Matplotlib</p>
-
-                <p>Plotly</p>
-
-            </div>
-
-
-
-            <div class="mini-card">
-
-                <h3>Bioinformatics</h3>
-
-                <p>Nextflow</p>
-
-                <p>Cytoscape</p>
-
-                <p>PyMOL</p>
-
-                <p>AutoDock</p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= HACKATHONS + EDUCATION ================= -->
-
-    <div class="grid-2">
-
-        <section class="card">
-
-            <h2 class="section-title">
-
-                Hackathons
-
-            </h2>
-
-            <div class="mini-card">
-
-                <h3>BioHackathon</h3>
-
-                <p>
-                    Multi-omics biomarker discovery
-                    using CPTAC LUAD data.
-                </p>
-
-            </div>
-
-            <br>
-
-            <div class="mini-card">
-
-                <h3>ML for Protein Engineering</h3>
-
-                <p>
-                    PD-1 antibody redesign
-                    using AI.
-                </p>
-
-            </div>
-
-        </section>
-
-
-
-        <section class="card">
-
-            <h2 class="section-title">
-
-                Education
-
-            </h2>
-
-            <div class="mini-card">
-
-                <h3>M.Sc Bioinformatics</h3>
-
-                <p>JSSAHER</p>
-
-                <p>CGPA 8.3</p>
-
-            </div>
-
-            <br>
-
-            <div class="mini-card">
-
-                <h3>IIT Madras</h3>
-
-                <p>Diploma in Data Science</p>
-
-            </div>
-
-            <br>
-
-            <div class="mini-card">
-
-                <h3>B.E Electronics</h3>
-
-                <p>BMS Institute of Technology</p>
-
-                <p>CGPA 8.12</p>
-
-            </div>
-
-        </section>
-
-    </div>
-
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section class="card">
-
-        <h2 class="section-title">
-
-            Let's Connect
-
-        </h2>
-
-        <div class="grid-4">
-
-            <div>Email</div>
-
-            <div>GitHub</div>
-
-            <div>LinkedIn</div>
-
-            <div>Resume</div>
-
-        </div>
-
-    </section>
-
-</div>
-
+    <script src="script.js"></script>
 </body>
