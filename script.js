@@ -24,7 +24,7 @@ window.addEventListener("resize",buildDNA);
 
 function animate() {
     const t = Date.now() * 0.00020;
-    const radius = 190;   // Half of your orb size (380px orb)
+    const radius = Math.min(190, window.innerWidth * 0.25);
     const x =
     radius +
     ((Math.sin(t) + 1) / 2) *
