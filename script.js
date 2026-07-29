@@ -23,7 +23,7 @@ buildDNA();
 window.addEventListener("resize",buildDNA);
 
 function animate() {
-    const t = Date.now() * 0.00020;
+    const t = Date.now() * 0.0004;
     const radius = Math.min(190, window.innerWidth * 0.25);
     const x =
     radius +
