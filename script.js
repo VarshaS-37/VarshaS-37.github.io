@@ -118,7 +118,7 @@ function startGame(choice){
     resetBoard();
     gameActive=true;
     playerTurn=true;
-    statusText.innerHTML = 'Your turn! Click any box to place your nucleotide...';
+    statusText.innerHTML = 'Click any box to place your nucleotide...';
 }
 
 function restartGame(){
