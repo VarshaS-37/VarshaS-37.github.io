@@ -107,6 +107,7 @@ function startGame(choice){
     opponent =
     available[Math.floor(Math.random()*available.length)];
     document.getElementById("choice-box").style.display="none";
+    document.getElementById("game-intro").style.display = "none";
     document.getElementById("player-symbol").innerHTML =
     `Your choice: ${player}`;
     document.getElementById("opponent-symbol").innerHTML =
