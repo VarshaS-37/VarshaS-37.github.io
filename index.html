@@ -57,10 +57,12 @@
                 </p>
             </div>
             <div class="dna-game">
-                <div class="game-card" onclick="openGame()">
+                <div class="game-card">
                     <h3>Wanna Play Tic-Tac-Toe?</h3>
                     <p>Tired of X and O? Try DNA bases instead.</p>
-                    <span>Click to Play</span>
+                    <button id="restart-btn" onclick="openGame()">
+                        Click to Play                    
+                    </button>
                 </div>
                 <div class="dna-game-board" id="dna-game-board" style="display:none;">
                     <p id="game-status">
