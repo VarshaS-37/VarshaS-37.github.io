@@ -114,7 +114,7 @@ function startGame(choice){
     document.getElementById("player-symbol").innerHTML =
     `Your choice: ${player}`;
     document.getElementById("opponent-symbol").innerHTML =
-    `My choice: ${opponent}`;
+    `DNA's choice: ${opponent}`;
     resetBoard();
     gameActive=true;
     playerTurn=true;
@@ -154,7 +154,7 @@ function playerMove(index){
         return;
     } 
     playerTurn=false;
-    statusText.innerHTML ='My Turn';
+    statusText.innerHTML ='DNA\'s Turn';
     setTimeout(opponentMove, 500);
 }
 
@@ -176,7 +176,7 @@ function opponentMove(){
     cells[move].innerHTML=opponent;
     if(checkWinner(opponent)){  
         endGame(
-            '<i class="fa-solid fa-robot"></i> I won! Better luck next time'
+            '<i class="fa-solid fa-robot"></i> DNA won! Better luck next time'
         );  
         return;
     }
