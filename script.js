@@ -87,6 +87,7 @@ let playerTurn = true;
 const nucleotides = ["A", "T", "G", "C"];
 const cells = document.querySelectorAll(".board button");
 const statusText = document.getElementById("game-status");
+const endText = document.getElementById("end-status");
 
 const winningPatterns = [
     [0,1,2],
@@ -220,7 +221,7 @@ function checkDraw(){
 function endGame(message){
     gameActive = false;
     statusText.innerHTML=message;
-    setTimeout(()=>{ statusText.innerHTML +="<br><br>Wanna play again? Click restart"; },300);
+    setTimeout(()=>{ endText.innerHTML +="<br><br>Wanna play again? Click restart"; },300);
 }
 
 function resetBoard(){  
