@@ -271,13 +271,14 @@ body{
     padding:10px 22px;
     border-radius:12px;
     border:1px solid rgba(180,210,255,.25);
-    
+    background: #4fd1c5;
+    color: #1f3a52;
     cursor:pointer;
     transition:.25s;
     font-family:"JetBrains Mono",monospace;
 }
 #play-btn:hover{
-    background:rgba(110,220,255,.2);
+    background: #66e3d8;
     transform:translateY(-2px);
 }
 .game-card{
