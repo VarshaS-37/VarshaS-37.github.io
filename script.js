@@ -100,7 +100,7 @@ const winningPatterns = [
 ];
 function openGame() {
     document.querySelector(".game-card").style.display = "none";
-    document.getElementById("dna-game").style.display = "block";
+    document.getElementById("dna-game-board").style.display = "block";
 }
 
 function startGame(choice){
