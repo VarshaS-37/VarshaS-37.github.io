@@ -64,6 +64,10 @@
                     </button>
                 </div>
                 <div class="dna-game-board" id="dna-game-board" style="display:none;">
+                    <div id="players">
+                        <span id="player-symbol"></span>
+                        <span id="opponent-symbol"></span>
+                    </div>
                     <p id="game-status">
                        <i class="fa-solid fa-dna"></i> Choose your nucleotide
                     </p>
@@ -74,10 +78,7 @@
                         <button onclick="startGame('G')">G</button>
                         <button onclick="startGame('C')">C</button>
                     </div>
-                    <div id="players">
-                        <span id="player-symbol"></span>
-                        <span id="opponent-symbol"></span>
-                    </div>
+                    
                     <div class="board">
                         <button onclick="playerMove(0)"></button>
                         <button onclick="playerMove(1)"></button>
