@@ -282,7 +282,7 @@ body{
     transform:translateY(-2px);
 }
 .game-card{
-    background: linear-gradient(135deg, #2f4d68, #5a4f8d);
+    background: #6c92b8;
     border-radius: 18px;
     border: 1px solid rgba(255,255,255,0.15);
     padding: 20px;
