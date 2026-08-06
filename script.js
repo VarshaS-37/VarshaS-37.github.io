@@ -219,6 +219,8 @@ function checkDraw(){
 
 function endGame(message){
     gameActive = false;
+    document.getElementById("player-symbol").style.display = "none".
+    document.getElementById("opponent-symbol").style.display = "none".
     statusText.innerHTML=message;
     setTimeout(()=>{ statusText.innerHTML +="<br><br>Wanna play again? Click restart"; },500);
 }
