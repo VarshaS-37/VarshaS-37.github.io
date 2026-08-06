@@ -271,22 +271,17 @@ body{
     padding:10px 22px;
     border-radius:12px;
     border:1px solid rgba(180,210,255,.25);
-    background: #4fd1c5;
-    color: #1f3a52;
+    background:rgba(110,220,255,.08);
+    color: white;
     cursor:pointer;
     transition:.25s;
     font-family:"JetBrains Mono",monospace;
 }
 #play-btn:hover{
-    background: #66e3d8;
+    background: rgba(110,220,255,.2);
     transform:translateY(-2px);
 }
-.game-card{
-    background: #4f83b8;
-    border-radius: 18px;
-    border: 1px solid rgba(255,255,255,0.15);
-    padding: 20px;
-}
+
 /******************************************************/
 .projects-container{
     display:flex;
