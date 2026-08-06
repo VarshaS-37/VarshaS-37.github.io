@@ -153,7 +153,7 @@ function playerMove(index){
     } 
     playerTurn=false;
     statusText.innerHTML ='DNA\'s Turn';
-    setTimeout(opponentMove, 700);
+    setTimeout(opponentMove, 600);
 }
 
 function opponentMove(){
@@ -219,10 +219,8 @@ function checkDraw(){
 
 function endGame(message){
     gameActive = false;
-    document.getElementById("player-symbol").style.display = "none";
-    document.getElementById("opponent-symbol").style.display = "none";
     statusText.innerHTML=message;
-    setTimeout(()=>{ statusText.innerHTML +="<br><br>Wanna play again? Click restart"; },500);
+    setTimeout(()=>{ statusText.innerHTML +="<br><br>Wanna play again? Click restart"; },300);
 }
 
 function resetBoard(){  
