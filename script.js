@@ -123,8 +123,6 @@ function startGame(choice){
 
 function restartGame(){
     document.getElementById("choice-box").style.display="flex";
-    document.querySelector(".board").style.display = "grid";
-    document.getElementById("players").style.display = "flex";
     document.getElementById("player-symbol").innerHTML="";
     document.getElementById("opponent-symbol").innerHTML="";
     statusText.innerHTML = '<i class="fa-solid fa-dna"></i> Choose your nucleotide';
@@ -221,8 +219,7 @@ function checkDraw(){
 
 function endGame(message){
     gameActive = false;
-    document.querySelector(".board").style.display = "none";
-    document.getElementById("players").style.display = "none";
+
     
 }
 
