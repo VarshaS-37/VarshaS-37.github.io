@@ -98,6 +98,10 @@ const winningPatterns = [
     [0,4,8],
     [2,4,6]
 ];
+function openGame() {
+    document.querySelector(".game-card").style.display = "none";
+    document.getElementById("dna-game").style.display = "block";
+}
 
 function startGame(choice){
     player = choice;
