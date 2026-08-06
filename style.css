@@ -281,6 +281,12 @@ body{
     background:rgba(110,220,255,.2);
     transform:translateY(-2px);
 }
+.game-card{
+    background: linear-gradient(135deg, #2d4f6c, #3c6283);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+    padding: 20px;
+}
 /******************************************************/
 .projects-container{
     display:flex;
