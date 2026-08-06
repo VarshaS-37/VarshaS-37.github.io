@@ -108,13 +108,13 @@ function startGame(choice){
     available[Math.floor(Math.random()*available.length)];
     document.getElementById("choice-box").style.display="none";
     document.getElementById("player-symbol").innerHTML =
-    `You: ${player}`;
+    `Your choice: ${player}`;
     document.getElementById("opponent-symbol").innerHTML =
-    `Me: ${opponent}`;
+    `Alogrithm's choice: ${opponent}`;
     resetBoard();
     gameActive=true;
     playerTurn=true;
-    statusText.innerHTML = '<i class="fa-solid fa-user"></i> Waiting for ur next move...';
+    statusText.innerHTML = '<i class="fa-solid fa-user"></i> Click any tile to place your nucleotide...';
 }
 
 function restartGame(){
