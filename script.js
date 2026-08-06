@@ -118,7 +118,7 @@ function startGame(choice){
     resetBoard();
     gameActive=true;
     playerTurn=true;
-    statusText.innerHTML = '<i class="fa-solid fa-user"></i>Your turn! Click any box to place your nucleotide...';
+    statusText.innerHTML = 'Your turn! Click any box to place your nucleotide...';
 }
 
 function restartGame(){
@@ -147,12 +147,12 @@ function playerMove(index){
     }
     if(checkDraw()){ 
         endGame(
-            '<i class="fa-solid fa-scale-balanced"></i> Great! It\'s a Draw '
+            'Oops! It\'s a Draw '
         );
         return;
     } 
     playerTurn=false;
-   
+    setTimeout(opponentMove, 600);
 }
 
 function opponentMove(){
@@ -179,7 +179,7 @@ function opponentMove(){
     }
     if(checkDraw()){ 
         endGame(
-            '<i class="fa-solid fa-scale-balanced"></i> Great! It\'s a Draw'
+            'Oops! It\'s a Draw'
         );
         return;
     }
