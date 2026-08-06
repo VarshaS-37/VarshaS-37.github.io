@@ -271,7 +271,7 @@ body{
     padding:10px 22px;
     border-radius:12px;
     border:1px solid rgba(180,210,255,.25);
-    color:white;
+    
     cursor:pointer;
     transition:.25s;
     font-family:"JetBrains Mono",monospace;
@@ -283,6 +283,7 @@ body{
 .game-card{
     background: linear-gradient(135deg, #2f4d68, #5a4f8d);
     border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.15);
     padding: 20px;
 }
 /******************************************************/
