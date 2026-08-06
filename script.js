@@ -153,7 +153,7 @@ function playerMove(index){
     } 
     playerTurn=false;
     statusText.innerHTML ='DNA\'s Turn';
-    setTimeout(opponentMove, 1000);
+    setTimeout(opponentMove, 700);
 }
 
 function opponentMove(){
