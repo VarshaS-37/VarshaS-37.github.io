@@ -243,6 +243,12 @@ body{
     margin-top:15px;
     font-family:"JetBrains Mono",monospace;
 }
+#end-status{
+    color:#d4dee8;
+    font-size:15px;
+    margin-top:15px;
+    font-family:"JetBrains Mono",monospace;
+}
 #players{
     display:flex;
     justify-content:center;
