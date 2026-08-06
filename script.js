@@ -123,6 +123,8 @@ function startGame(choice){
 
 function restartGame(){
     document.getElementById("choice-box").style.display="flex";
+    document.querySelector(".board").style.display = "grid";
+    document.getElementById("players").style.display = "flex";
     document.getElementById("player-symbol").innerHTML="";
     document.getElementById("opponent-symbol").innerHTML="";
     statusText.innerHTML = '<i class="fa-solid fa-dna"></i> Choose your nucleotide';
@@ -152,7 +154,7 @@ function playerMove(index){
         return;
     } 
     playerTurn=false;
-    setTimeout(opponentMove, 600);
+    setTimeout(opponentMove, 300);
 }
 
 function opponentMove(){
@@ -217,11 +219,11 @@ function checkDraw(){
 }
 
 function endGame(message){
-    gameActive=false;
-    statusText.innerHTML=message;
-    setTimeout(()=>{
-    statusText.innerHTML +="<br>Ready for another challenge? Click restart";  
-    },500);
+    gameActive = false;
+    document.querySelector(".board").style.display = "none";
+    document.getElementById("players").style.display = "none";
+    statusText.innerHTML =
+        message + "<br><br>Ready for another challenge? Click Restart.";
 }
 
 function resetBoard(){  
