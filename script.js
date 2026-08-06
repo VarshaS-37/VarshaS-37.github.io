@@ -219,6 +219,7 @@ function checkDraw(){
 
 function endGame(message){
     gameActive = false;
+    statusText.innerHTML=message;
     setTimeout(()=>{ statusText.innerHTML +="<br><br>Wanna play again? Click restart"; },500);
 }
 
