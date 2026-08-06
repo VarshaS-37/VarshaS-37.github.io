@@ -112,9 +112,9 @@ function startGame(choice){
     available[Math.floor(Math.random()*available.length)];
     document.getElementById("choice-box").style.display="none";
     document.getElementById("player-symbol").innerHTML =
-    `Your choice: ${player}`;
+    `You: ${player}`;
     document.getElementById("opponent-symbol").innerHTML =
-    `DNA's choice: ${opponent}`;
+    `DNA: ${opponent}`;
     resetBoard();
     gameActive=true;
     playerTurn=true;
