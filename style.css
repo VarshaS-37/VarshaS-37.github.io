@@ -266,6 +266,21 @@ body{
     background:rgba(110,220,255,.2);
     transform:translateY(-2px);
 }
+#play-btn{
+    margin-top:15px;
+    padding:10px 22px;
+    border-radius:12px;
+    border:1px solid rgba(180,210,255,.25);
+    background:rgba(110,220,255,.08);
+    color:white;
+    cursor:pointer;
+    transition:.25s;
+    font-family:"JetBrains Mono",monospace;
+}
+#play-btn:hover{
+    background:rgba(110,220,255,.2);
+    transform:translateY(-2px);
+}
 /******************************************************/
 .projects-container{
     display:flex;
