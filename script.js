@@ -105,6 +105,7 @@ function openGame() {
 }
 
 function startGame(choice){
+    endText.innerHTML = "";
     player = choice;
     let available = nucleotides.filter(
         n => n !== player
@@ -123,6 +124,7 @@ function startGame(choice){
 }
 
 function restartGame(){
+    endText.innerHTML = "";
     document.getElementById("choice-box").style.display="flex";
     document.getElementById("player-symbol").innerHTML="";
     document.getElementById("opponent-symbol").innerHTML="";
@@ -221,7 +223,7 @@ function checkDraw(){
 function endGame(message){
     gameActive = false;
     statusText.innerHTML=message;
-    setTimeout(()=>{ endText.innerHTML +="<br><br>Wanna play again? Click restart"; },300);
+    setTimeout(()=>{ endText.innerHTML = "<br><br>Wanna play again? Click restart"; },300);
 }
 
 function resetBoard(){  
@@ -235,6 +237,7 @@ function resetBoard(){
         cell.innerHTML="";
         
     });  
+    endText.innerHTML = "";
 }
 
 cards.forEach((card, index) => {
