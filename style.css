@@ -548,10 +548,15 @@ color:#9fdcff;
       .grid-3{
         grid-template-columns:repeat(2,1fr);
     }
+    .spinner {
+        display: none;
+    }
 }
 /* mobile */
 @media(max-width:900px){
-  
+    .spinner {
+        display: none;
+    }
     .board{
         grid-template-columns:repeat(3,60px);
     }
