@@ -57,38 +57,41 @@
                 </p>
             </div>
             <div class="dna-game">
-                <div id="game-intro">
-                    <h3>Wanna play Tic-Tac-Toe</h3>
-                    <h4>Tired of X and O? Try DNA bases instead.</h4>
-                 </div>
-                <p id="game-status">
-                   <i class="fa-solid fa-dna"></i> Choose your nucleotide
-                </p>
-                <br>
-                <div class="choice" id="choice-box">
-                    <button onclick="startGame('A')">A</button>
-                    <button onclick="startGame('T')">T</button>
-                    <button onclick="startGame('G')">G</button>
-                    <button onclick="startGame('C')">C</button>
+                <div class="game-card" onclick="openGame()">
+                    <h3>Wanna Play Tic-Tac-Toe?</h3>
+                    <p>Tired of X and O? Try DNA bases instead.</p>
+                    <span>Click to Play</span>
                 </div>
-                <div id="players">
-                    <span id="player-symbol"></span>
-                    <span id="opponent-symbol"></span>
+                <div class="dna-game-board" id="dna-game-board" style="display:none;">
+                    <p id="game-status">
+                       <i class="fa-solid fa-dna"></i> Choose your nucleotide
+                    </p>
+                    <br>
+                    <div class="choice" id="choice-box">
+                        <button onclick="startGame('A')">A</button>
+                        <button onclick="startGame('T')">T</button>
+                        <button onclick="startGame('G')">G</button>
+                        <button onclick="startGame('C')">C</button>
+                    </div>
+                    <div id="players">
+                        <span id="player-symbol"></span>
+                        <span id="opponent-symbol"></span>
+                    </div>
+                    <div class="board">
+                        <button onclick="playerMove(0)"></button>
+                        <button onclick="playerMove(1)"></button>
+                        <button onclick="playerMove(2)"></button>
+                        <button onclick="playerMove(3)"></button>
+                        <button onclick="playerMove(4)"></button>
+                        <button onclick="playerMove(5)"></button>
+                        <button onclick="playerMove(6)"></button>
+                        <button onclick="playerMove(7)"></button>
+                        <button onclick="playerMove(8)"></button>
+                    </div>
+                    <button id="restart-btn" onclick="restartGame()">
+                        Restart
+                    </button>
                 </div>
-                <div class="board">
-                    <button onclick="playerMove(0)"></button>
-                    <button onclick="playerMove(1)"></button>
-                    <button onclick="playerMove(2)"></button>
-                    <button onclick="playerMove(3)"></button>
-                    <button onclick="playerMove(4)"></button>
-                    <button onclick="playerMove(5)"></button>
-                    <button onclick="playerMove(6)"></button>
-                    <button onclick="playerMove(7)"></button>
-                    <button onclick="playerMove(8)"></button>
-                </div>
-                <button id="restart-btn" onclick="restartGame()">
-                    Restart
-                </button>
             </div>
         </section>
         <!-- ================= EXPERIENCE ================= -->
