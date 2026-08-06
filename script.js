@@ -114,11 +114,11 @@ function startGame(choice){
     document.getElementById("player-symbol").innerHTML =
     `Your choice: ${player}`;
     document.getElementById("opponent-symbol").innerHTML =
-    `Alogrithm's choice: ${opponent}`;
+    `Algorithm's choice: ${opponent}`;
     resetBoard();
     gameActive=true;
     playerTurn=true;
-    statusText.innerHTML = '<i class="fa-solid fa-user"></i> Click any tile to place your nucleotide...';
+    statusText.innerHTML = '<i class="fa-solid fa-user"></i>Your turn! Click any box to place your nucleotide...';
 }
 
 function restartGame(){
@@ -147,13 +147,12 @@ function playerMove(index){
     }
     if(checkDraw()){ 
         endGame(
-            '<i class="fa-solid fa-scale-balanced"></i> Perfect balance! Neither sequence could dominate '
+            '<i class="fa-solid fa-scale-balanced"></i> Great! It\'s a Draw '
         );
         return;
     } 
     playerTurn=false;
-    statusText.innerHTML ='<i class="fa-solid fa-microchip"></i> Running prediction algorithm...';
-    setTimeout(opponentMove,600);
+   
 }
 
 function opponentMove(){
@@ -174,18 +173,18 @@ function opponentMove(){
     cells[move].innerHTML=opponent;
     if(checkWinner(opponent)){  
         endGame(
-            '<i class="fa-solid fa-robot"></i> Algorithm wins! Better luck next time'
+            '<i class="fa-solid fa-robot"></i> Algorithm won! Better luck next time'
         );  
         return;
     }
     if(checkDraw()){ 
         endGame(
-            '<i class="fa-solid fa-scale-balanced"></i> Perfect balance! Neither sequence could dominate'
+            '<i class="fa-solid fa-scale-balanced"></i> Great! It\'s a Draw'
         );
         return;
     }
     playerTurn=true;
-    statusText.innerHTML ="Waiting for ur next move...";
+    statusText.innerHTML ="Your turn!";
 }
 
 function findBestMove(symbol){
