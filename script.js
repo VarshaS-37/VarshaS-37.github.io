@@ -114,7 +114,7 @@ function startGame(choice){
     document.getElementById("player-symbol").innerHTML =
     `Your choice: ${player}`;
     document.getElementById("opponent-symbol").innerHTML =
-    `Algorithm's choice: ${opponent}`;
+    `My choice: ${opponent}`;
     resetBoard();
     gameActive=true;
     playerTurn=true;
@@ -143,7 +143,7 @@ function playerMove(index){
     cells[index].innerHTML = player;
     if(checkWinner(player)){
         endGame(
-            '<i class="fa-solid fa-trophy"></i> Congrats! You defeated the algorithm'
+            '<i class="fa-solid fa-trophy"></i> Congrats! You won'
         );
         return;
     }
@@ -154,7 +154,8 @@ function playerMove(index){
         return;
     } 
     playerTurn=false;
-    setTimeout(opponentMove, 300);
+    statusText.innerHTML ='My Turn';
+    setTimeout(opponentMove, 500);
 }
 
 function opponentMove(){
@@ -175,7 +176,7 @@ function opponentMove(){
     cells[move].innerHTML=opponent;
     if(checkWinner(opponent)){  
         endGame(
-            '<i class="fa-solid fa-robot"></i> Algorithm won! Better luck next time'
+            '<i class="fa-solid fa-robot"></i> I won! Better luck next time'
         );  
         return;
     }
@@ -222,8 +223,7 @@ function endGame(message){
     gameActive = false;
     document.querySelector(".board").style.display = "none";
     document.getElementById("players").style.display = "none";
-    statusText.innerHTML =
-        message + "<br><br>Ready for another challenge? Click Restart.";
+    
 }
 
 function resetBoard(){  
