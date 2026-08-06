@@ -223,7 +223,7 @@ function checkDraw(){
 function endGame(message){
     gameActive = false;
     statusText.innerHTML=message;
-    setTimeout(()=>{ endText.innerHTML = "<br><br>Wanna play again? Click restart"; },300);
+    setTimeout(()=>{ endText.innerHTML = "<br>Wanna play again? Click restart"; },300);
 }
 
 function resetBoard(){  
