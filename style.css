@@ -496,7 +496,9 @@ body{
     font-size:15px;
     line-height:1.6;
 }
-
+.biohackathon-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
 /******************************************************/
 .tool-grid{
 display:grid;
